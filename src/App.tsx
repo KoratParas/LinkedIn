@@ -6,16 +6,21 @@
  */
 
 import React from 'react';
-import { SafeAreaView, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import ModalNavigator from './navigators/ModalNavigator';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Hello</Text>
-      </View>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <ModalNavigator />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default App;
